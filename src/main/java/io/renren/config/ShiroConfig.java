@@ -38,7 +38,6 @@ public class ShiroConfig {
         securityManager.setRememberMeManager(null);
         return securityManager;
     }
-
     @Bean("shiroFilter")
     public ShiroFilterFactoryBean shiroFilter(SecurityManager securityManager) {
         ShiroFilterFactoryBean shiroFilter = new ShiroFilterFactoryBean();
